@@ -3,118 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poultry Sheba 24 - আপনার পোল্ট্রি খামারের বিশ্বস্ত সহযোগী</title>
+    <title>Poultry Sheba 24 - আপনার খামারের সহযোগী</title>
     <style>
-        /* CSS Styles */#digital-clock {
-    background: linear-gradient(135deg, #1a252f, #2c3e50);
-    color: #f1c40f;
-    text-align: center;
-    padding: 15px;
-    border-bottom: 3px solid #e67e22;
-}
-#clock-time { font-size: 28px; font-weight: bold; }
-#clock-date { font-size: 16px; color: #ecf0f1; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;<div id="digital-clock">
-    <div id="clock-time"></div>
-    <div id="clock-date"></div>
-</div>
-            background-color: #f4f7f6;
-            direction: ltr;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #e67e22;
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            background-color: #d35400;
-            border-radius: 5px;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 20px auto;
-            padding: 20px;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 20px;
-        }
-        /* Blog Post Styles */
-        .main-content {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .post {
-            border-bottom: 1px solid #eee;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-        }
-        .post h2 {
-            color: #2c3e50;
-        }
-        .post img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        /* Sidebar Styles */
-        .sidebar {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .widget {
-            margin-bottom: 30px;
-        }
-        .widget h3 {
-            border-left: 5px solid #e67e22;
-            padding-left: 10px;
-            background: #f9f9f9;
-        }
-        .btn-contact {
-            background-color: #27ae60;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
-        }
+        /* CSS Styles */
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; }
+        
+        /* Digital Clock Styling */
+        #digital-clock { background: #1a252f; color: #f1c40f; text-align: center; padding: 15px; border-bottom: 3px solid #e67e22; }
+        #clock-time { font-size: 26px; font-weight: bold; }
+        #clock-date { font-size: 14px; color: #ecf0f1; margin-top: 5px; }
+
+        header { background-color: #2c3e50; color: white; padding: 30px 20px; text-align: center; }
+        nav { background-color: #e67e22; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; padding: 10px 15px; font-weight: bold; display: inline-block; }
+
+        /* Button Styling */
+        .btn-container { text-align: center; padding: 20px; display: flex; flex-direction: column; gap: 10px; align-items: center; }
+        .custom-btn { text-decoration: none; padding: 15px 25px; border-radius: 8px; font-weight: bold; color: white; width: 90%; max-width: 400px; display: block; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn-schedule { background-color: #e67e22; }
+        .btn-whatsapp { background-color: #25D366; }
+        .btn-call { background-color: #2c3e50; }
+
+        .container { max-width: 1100px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     </style>
 </head>
 <body>
+
+<div id="digital-clock">
+    <div id="clock-time">সময় লোড হচ্ছে...</div>
+    <div id="clock-date">তারিখ লোড হচ্ছে...</div>
+</div>
 
 <header>
     <h1>Poultry Sheba 24</h1>
@@ -122,64 +41,38 @@
 </header>
 
 <nav>
-    <a href="#">হোম</a>
-    <a href="#">টিকা চার্ট</a>
-    <a href="#">রোগ ও প্রতিকার</a>
-    <a href="#">পণ্য কিনুন</a>
+    <a href="index.html">হোম</a>
+    <a href="medicine-schedule.html">মেডিসিন চার্ট</a>
     <a href="#">যোগাযোগ</a>
 </nav>
 
+<div class="btn-container">
+    <a href="medicine-schedule.html" class="custom-btn btn-schedule">📅 লেয়ার মুরগির মেডিসিন শিডিউল</a>
+    <a href="https://wa.me/8801645422463" class="custom-btn btn-whatsapp">💬 হোয়াটসঅ্যাপ মেসেজ (01645422463)</a>
+    <a href="tel:+8801645422463" class="custom-btn btn-call">📞 সরাসরি কল করুন</a>
+</div>
+
 <div class="container">
-    <div class="main-content">
-        <div class="post">
-            <h2>ব্রয়লার মুরগির শীতকালীন ব্যবস্থাপনা</h2>
-            <img src="https://via.placeholder.com/800x400" alt="Poultry Farming">
-            <p>শীতকালে ব্রয়লার মুরগির বাচ্চার ব্রুডিং ব্যবস্থাপনা অত্যন্ত গুরুত্বপূর্ণ। সঠিক তাপমাত্রা বজায় না রাখলে বাচ্চার মৃত্যুহার বেড়ে যেতে পারে...</p>
-            <a href="#" style="color: #e67e22;">আরও পড়ুন...</a>
-        </div>
-
-        <div class="post">
-            <h2>সঠিকভাবে টিকা দেওয়ার নিয়মাবলী</h2>
-            <p>মুরগির রানীক্ষেত এবং গামবোরো রোগের টিকা দেওয়ার সময়সূচী এবং পদ্ধতি সম্পর্কে বিস্তারিত তথ্য জানুন। সময়মতো টিকা খামারের বড় ক্ষতি রোধ করে।</p>
-            <a href="#" style="color: #e67e22;">আরও পড়ুন...</a>
-        </div>
-    </div>
-
-    <div class="sidebar">
-        <div class="widget">
-            <h3>বিভাগসমূহ</h3>
-            <ul>
-                <li>লেয়ার মুরগি পালন</li>
-                <li>ব্রয়লার ব্যবস্থাপনা</li>
-                <li>দেশি মুরগি ও হাঁস</li>
-                <li>খামারের সরঞ্জাম</li>
-            </ul>
-        </div>
-
-        <div class="widget">
-            <h3>আমাদের সেবা</h3>
-            <p>আমরা খামারিদের জন্য উন্নত মানের খাদ্য ফর্মুলা এবং চিকিৎসা সেবা প্রদান করে থাকি।</p>
-            <a href="https://wa.me/YOUR_NUMBER" class="btn-contact">হোয়াটসঅ্যাপে যোগাযোগ করুন</a>
-        </div>
-    </div>
+    <h2>ব্রয়লার মুরগির শীতকালীন ব্যবস্থাপনা</h2>
+    <p>শীতকালে ব্রয়লার মুরগির বাচ্চার ব্রুডিং ব্যবস্থাপনা অত্যন্ত গুরুত্বপূর্ণ। সঠিক তাপমাত্রা বজায় না রাখলে বাচ্চার মৃত্যুহার বেড়ে যেতে পারে। বিস্তারিত তথ্যের জন্য আমাদের সাথেই থাকুন।</p>
 </div>
 
 <footer>
-    <p>&copy; 2026 Poultry Sheba 24 | সর্বস্বত্ব সংরক্ষিত</p>
-    <p>গাইবান্ধা, বাংলাদেশ</p>
+    <p>&copy; 2026 Poultry Sheba 24 | গাইবান্ধা, বাংলাদেশ</p>
 </footer>
 
-</body>
-</html><script>
+<script>
     function updateClock() {
         const now = new Date();
         const timeString = now.toLocaleTimeString();
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         const dateString = now.toLocaleDateString('bn-BD', options);
-        
         document.getElementById('clock-time').innerHTML = timeString;
         document.getElementById('clock-date').innerHTML = dateString;
     }
     setInterval(updateClock, 1000);
     updateClock();
 </script>
+
+</body>
+</html>
