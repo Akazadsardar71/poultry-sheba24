@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poultry Sheba 24 - আপনার পোল্ট্রি খামারের বিশ্বস্ত সহযোগী</title>
     <style>
-        /* CSS Styles */
+        /* CSS Styles */#digital-clock {
+    background: linear-gradient(135deg, #1a252f, #2c3e50);
+    color: #f1c40f;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 3px solid #e67e22;
+}
+#clock-time { font-size: 28px; font-weight: bold; }
+#clock-date { font-size: 16px; color: #ecf0f1; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 0;<div id="digital-clock">
+    <div id="clock-time"></div>
+    <div id="clock-date"></div>
+</div>
             background-color: #f4f7f6;
             direction: ltr;
         }
@@ -159,4 +170,16 @@
 </footer>
 
 </body>
-</html>
+</html><script>
+    function updateClock() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const dateString = now.toLocaleDateString('bn-BD', options);
+        
+        document.getElementById('clock-time').innerHTML = timeString;
+        document.getElementById('clock-date').innerHTML = dateString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
