@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পোল্ট্রি সেবা - ড্যাশবোর্ড</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: #f8fafc; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="flex min-h-screen">
+        <aside class="w-64 bg-white border-r hidden md:block">
+            <div class="p-6">
+                <h1 class="text-2xl font-bold text-blue-600">পোল্ট্রি সেবা</h1>
+            </div>
+            <nav class="mt-4">
+                <a href="#" class="flex items-center px-6 py-3 bg-blue-50 text-blue-600 border-r-4 border-blue-600">
+                    <i class="fas fa-th-large mr-3"></i> ড্যাশবোর্ড
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50">
+                    <i class="fas fa- dove mr-3"></i> ফ্লক ম্যানেজমেন্ট
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50">
+                    <i class="fas fa-boxes mr-3"></i> স্টক ইনভেন্টরি
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50">
+                    <i class="fas fa-calendar-alt mr-3"></i> খামারের রুটিন
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50">
+                    <i class="fas fa-file-invoice-dollar mr-3"></i> রিপোর্ট ও ফিন্যান্স
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50">
+                    <i class="fas fa-cog mr-3"></i> সেটিংস
+                </a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-4 md:p-8">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-800">স্বাগতম, খামার মালিক!</h2>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-500"><i class="fas fa-bell"></i></button>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm">প্রোফাইল</button>
+                </div>
+            </div>
+
+            <h3 class="text-lg font-semibold text-blue-600 mb-4 border-l-4 border-blue-600 pl-2">কমান্ড সেন্টার (দ্রুত পদক্ষেপ)</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border text-center hover:shadow-md transition">
+                    <div class="text-red-500 text-2xl mb-2"><i class="fas fa-plus-circle"></i></div>
+                    <p class="font-bold text-gray-700">নতুন ফ্লক</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border text-center hover:shadow-md transition">
+                    <div class="text-yellow-500 text-2xl mb-2"><i class="fas fa-egg"></i></div>
+                    <p class="font-bold text-gray-700">ডিম সংগ্রহ</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border text-center hover:shadow-md transition">
+                    <div class="text-green-500 text-2xl mb-2"><i class="fas fa-hand-holding-usd"></i></div>
+                    <p class="font-bold text-gray-700">আয় যোগ করুন</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border text-center hover:shadow-md transition">
+                    <div class="text-gray-800 text-2xl mb-2"><i class="fas fa-skull-crossbones"></i></div>
+                    <p class="font-bold text-gray-700">মরণশীলতা</p>
+                </div>
+            </div>
+
+            <h3 class="text-lg font-semibold text-blue-600 mb-4 border-l-4 border-blue-600 pl-2">খামার ও ইনভেন্টরি</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <div class="bg-white p-4 rounded-xl shadow-sm border flex items-center space-x-4">
+                    <div class="bg-purple-100 p-3 rounded-full text-purple-600 text-xl"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <p class="font-bold">খামারের রুটিন</p>
+                        <p class="text-xs text-gray-500">Egg, Feed, Health</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border flex items-center space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600 text-xl"><i class="fas fa-warehouse"></i></div>
+                    <div>
+                        <p class="font-bold">ফিড স্টক</p>
+                        <p class="text-xs text-gray-500">মজুদ পরীক্ষা করুন</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border flex items-center space-x-4">
+                    <div class="bg-red-100 p-3 rounded-full text-red-600 text-xl"><i class="fas fa-pills"></i></div>
+                    <div>
+                        <p class="font-bold">মেডিসিন ও ভ্যাকসিন</p>
+                        <p class="text-xs text-gray-500">স্টক ম্যানেজমেন্ট</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border flex items-center space-x-4">
+                    <div class="bg-indigo-100 p-3 rounded-full text-indigo-600 text-xl"><i class="fas fa-tasks"></i></div>
+                    <div>
+                        <p class="font-bold">টাস্ক ক্যালেন্ডার</p>
+                        <p class="text-xs text-gray-500">দৈনিক কাজের তালিকা</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-lg font-semibold text-blue-600 mb-4 border-l-4 border-blue-600 pl-2">বর্তমান স্টক অবস্থা</h3>
+            <div class="bg-white rounded-xl shadow-sm border overflow-hidden">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="p-4 border-b font-semibold text-gray-600 text-sm">আইটেম নাম</th>
+                            <th class="p-4 border-b font-semibold text-gray-600 text-sm">বিভাগ</th>
+                            <th class="p-4 border-b font-semibold text-gray-600 text-sm">পরিমাণ</th>
+                            <th class="p-4 border-b font-semibold text-gray-600 text-sm text-center">অবস্থা</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-4 text-gray-800">লেয়ার ফিড</td>
+                            <td class="p-4 text-gray-500 text-xs">ফিড স্টক</td>
+                            <td class="p-4 text-gray-800">৫০০ কেজি</td>
+                            <td class="p-4 text-center"><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">পর্যাপ্ত</span></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-4 text-gray-800">রানীক্ষেত ভ্যাকসিন</td>
+                            <td class="p-4 text-gray-500 text-xs">ভ্যাকসিন</td>
+                            <td class="p-4 text-gray-800">৫০ ডোজ</td>
+                            <td class="p-4 text-center"><span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">কম স্টক</span></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 text-gray-800">ডিম</td>
+                            <td class="p-4 text-gray-500 text-xs">পণ্য</td>
+                            <td class="p-4 text-gray-800">১২০০ টি</td>
+                            <td class="p-4 text-center"><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">বিক্রয়যোগ্য</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
